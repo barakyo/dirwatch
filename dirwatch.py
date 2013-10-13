@@ -24,7 +24,8 @@ class EventHandler(pyinotify.ProcessEvent):
         '.tex': ['pdflatex'],
         '.less': ['lessc'],
         '.scala': ['scala'],
-        '.sass': ['sass']
+        '.sass': ['sass'],
+        '.cql': ['neo4j-shell -file']
     }
 
     def process_IN_CREATE(self, event):
